@@ -3,6 +3,7 @@ const testing = std.testing;
 
 // import token.zig
 pub const token = @import("token.zig");
+pub const lexer = @import("lexer.zig");
 
 export fn add(a: i32, b: i32) i32 {
     return a + b;

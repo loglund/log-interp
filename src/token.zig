@@ -2,27 +2,27 @@
 const std = @import("std");
 const testing = std.testing;
 
-const Token = struct {
+pub const Token = struct {
     token_type: []const u8,
     literal: []const u8,
 };
 
 
-const ILLEGAL = "ILLEGAL";
-const EOF = "EOF";
+pub const ILLEGAL = "ILLEGAL";
+pub const EOF = "EOF";
 
-const IDENT = "IDENT";
-const INT = "INT";
+pub const IDENT = "IDENT";
+pub const INT = "INT";
 
-const ASSIGN = "=";
-const PLUS = "+";
+pub const ASSIGN = "=";
+pub const PLUS = "+";
 
-const COMMA = ",";
-const SEMICOLON = ";";
+pub const COMMA = ",";
+pub const SEMICOLON = ";";
 
-const LPAREN = "(";
-const RPAREN = ")";
-const LBRACE = "{";
-const RBRACE = "}";
-const FUNCTION = "FUNCTION";
-const LET = "LET";
+pub const LPAREN = "(";
+pub const RPAREN = ")";
+pub const LBRACE = "{";
+pub const RBRACE = "}";
+pub const FUNCTION = "FUNCTION";
+pub const LET = "LET";
