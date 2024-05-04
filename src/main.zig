@@ -1,5 +1,7 @@
 const std = @import("std");
 
+const log_interp = @import("log_interp");
+
 pub fn main() !void {
     // Prints to stderr (it's a shortcut based on `std.io.getStdErr()`)
     std.debug.print("All your {s} are belong to us.\n", .{"codebase"});
